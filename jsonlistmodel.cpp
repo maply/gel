@@ -123,9 +123,9 @@ int JsonListModel::addItem(const QJSValue &item)
 
     QJSValue existingItem = m_items[id];
 
-    if (existingItem.strictlyEquals(item)) {
-        return row;
-    }
+//    if (existingItem.strictlyEquals(item)) {
+//        return row;
+//    }
 
     m_items[id] = item;
     if (existingItem.isUndefined()) {
